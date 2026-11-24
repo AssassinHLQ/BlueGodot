@@ -1,375 +1,1161 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene format=3]
 
-[ext_resource type="Theme" path="res://addons/blue_archive_editor_theme/resources/blue_archive_theme.tres" id="1_theme"]
-[ext_resource type="Texture2D" path="res://addons/blue_archive_editor_theme/resources/assets/plugin_icon.svg" id="2_icon"]
+[ext_resource type="Theme" path="res://addons/blue_archive_editor_theme/resources/blue_archive_theme.tres" id="1_wh1uv"]
+[ext_resource type="Script" path="res://addons/blue_archive_editor_theme/preview/theme_preview.gd" id="2_bhbxw"]
+[ext_resource type="Texture2D" path="res://addons/blue_archive_editor_theme/resources/assets/background.svg" id="3_e82pd"]
+[ext_resource type="Texture2D" path="res://addons/blue_archive_editor_theme/resources/assets/plugin_icon.svg" id="4_wixsn"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_light"]
+[sub_resource type="SystemFont" id="SystemFont_lwtls"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
 
-[node name="BlueArchiveThemePreview" type="Control"]
+[sub_resource type="SystemFont" id="SystemFont_gatdm"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7icnq"]
+content_margin_left = 12.0
+content_margin_top = 5.0
+content_margin_right = 12.0
+content_margin_bottom = 5.0
+bg_color = Color(0.8627451, 0.93333334, 0.9764706, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.54901963, 0.79607844, 0.9098039, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="SystemFont" id="SystemFont_7ifg2"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6y8w2"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+border_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ug0td"]
+content_margin_left = 18.0
+content_margin_top = 16.0
+content_margin_right = 18.0
+content_margin_bottom = 16.0
+bg_color = Color(0.91764706, 0.9529412, 0.98039216, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.72156864, 0.8235294, 0.8901961, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="SystemFont" id="SystemFont_uiasp"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_l77w1"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_2ma88"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_e8g6w"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_5ssrg"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_y8bf3"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_13sgi"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_vk4k7"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_5jaag"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fgp8m"]
+content_margin_left = 18.0
+content_margin_top = 14.0
+content_margin_right = 18.0
+content_margin_bottom = 14.0
+bg_color = Color(0.972549, 0.9882353, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.72156864, 0.8235294, 0.8901961, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0.07, 0.23, 0.39, 0.09)
+shadow_size = 3
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_cddax"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_jsm7x"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_oc2fr"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_u6fhy"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_514hl"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_gmb3d"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_mhmrx"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_vj1lt"]
+
+[sub_resource type="SystemFont" id="SystemFont_sul4l"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_j882b"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_qpujt"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_un5g5"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_oid0p"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_lw5ym"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_ss0v8"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_86va6"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_654an"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_0m4hd"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_3508p"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_qv3sr"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_pv8fs"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_wgg2j"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_pg82j"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_utbsr"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_f4b6y"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_y7dh2"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="SystemFont" id="SystemFont_hgame"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
+font_weight = 600
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lgc50"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.72156864, 0.8235294, 0.8901961, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_neplb"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.72156864, 0.8235294, 0.8901961, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4kdmy"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.91764706, 0.9529412, 0.98039216, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.72156864, 0.8235294, 0.8901961, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dsdw1"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.972549, 0.9882353, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.72156864, 0.8235294, 0.8901961, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="BlueArchiveThemePreview" type="Control" unique_id=396882023]
 layout_mode = 3
-anchors_preset = 15
+anchors_preset = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = ExtResource("1_theme")
+theme = ExtResource("1_wh1uv")
+script = ExtResource("2_bhbxw")
 
-[node name="Background" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = 15
+[node name="Background" type="TextureRect" parent="." unique_id=1026939689]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_e82pd")
+expand_mode = 1
 
-[node name="Scroll" type="ScrollContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
+[node name="Margin" type="MarginContainer" parent="." unique_id=1710310891]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-follow_focus = true
+theme_override_constants/margin_left = 36
+theme_override_constants/margin_top = 36
+theme_override_constants/margin_right = 36
+theme_override_constants/margin_bottom = 36
 
-[node name="Margins" type="MarginContainer" parent="Scroll"]
+[node name="Main" type="VBoxContainer" parent="Margin" unique_id=411211939]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 18
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 18
+size_flags_vertical = 3
+theme_override_constants/separation = 18
 
-[node name="Content" type="VBoxContainer" parent="Scroll/Margins"]
+[node name="Header" type="HBoxContainer" parent="Margin/Main" unique_id=1580619626]
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/separation = 14
+theme_override_constants/separation = 16
 
-[node name="Header" type="HBoxContainer" parent="Scroll/Margins/Content"]
+[node name="PluginIcon" type="TextureRect" parent="Margin/Main/Header" unique_id=685909552]
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
-theme_override_constants/separation = 12
-
-[node name="Icon" type="TextureRect" parent="Scroll/Margins/Content/Header"]
-custom_minimum_size = Vector2(44, 44)
-layout_mode = 2
-texture = ExtResource("2_icon")
+size_flags_vertical = 4
+texture = ExtResource("4_wixsn")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Titles" type="VBoxContainer" parent="Scroll/Margins/Content/Header"]
+[node name="Titles" type="VBoxContainer" parent="Margin/Main/Header" unique_id=588964538]
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/separation = 1
+size_flags_vertical = 4
+theme_override_constants/separation = 2
 
-[node name="Title" type="Label" parent="Scroll/Margins/Content/Header/Titles"]
+[node name="@Label@2" type="Label" parent="Margin/Main/Header/Titles" unique_id=543238382]
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
-theme_override_colors/font_color = Color(0.071, 0.227, 0.392, 1)
-text = "BLUE ARCHIVE / EDITOR THEME"
+theme_override_fonts/font = SubResource("SystemFont_lwtls")
+theme_override_font_sizes/font_size = 30
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "BLUE ARCHIVE"
 
-[node name="Subtitle" type="Label" parent="Scroll/Margins/Content/Header/Titles"]
+[node name="@Label@3" type="Label" parent="Margin/Main/Header/Titles" unique_id=1375390375]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.42, 0.498, 0.553, 1)
-text = "SCHALE DESIGN SYSTEM · 浅冰蓝工作台"
+theme_override_fonts/font = SubResource("SystemFont_gatdm")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "EDITOR THEME  /  蔚蓝档案编辑器主题"
 
-[node name="Tag" type="Label" parent="Scroll/Margins/Content/Header"]
+[node name="@Label@4" type="Label" parent="Margin/Main/Header/Titles" unique_id=286080434]
 layout_mode = 2
 theme_override_font_sizes/font_size = 12
-theme_override_colors/font_color = Color(0.071, 0.227, 0.392, 1)
-text = "  EDITOR THEME 1.0  "
-vertical_alignment = 1
+theme_override_colors/font_color = Color(0.41960785, 0.49803922, 0.5529412, 1)
+text = "Ice-white workspace · navy typography · cyan precision"
 
-[node name="Hero" type="PanelContainer" parent="Scroll/Margins/Content"]
-layout_mode = 2
-
-[node name="HeroBox" type="VBoxContainer" parent="Scroll/Margins/Content/Hero"]
-layout_mode = 2
-theme_override_constants/separation = 10
-
-[node name="HeroTitle" type="Label" parent="Scroll/Margins/Content/Hero/HeroBox"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 18
-text = "工作区主题预览"
-
-[node name="HeroDescription" type="Label" parent="Scroll/Margins/Content/Hero/HeroBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.42, 0.498, 0.553, 1)
-text = "深藏蓝正文 · 青色交互高亮 · 削角与斜切控件 · 清晰平滑字体"
-
-[node name="Buttons" type="HBoxContainer" parent="Scroll/Margins/Content/Hero/HeroBox"]
-layout_mode = 2
-theme_override_constants/separation = 10
-
-[node name="PrimaryButton" type="Button" parent="Scroll/Margins/Content/Hero/HeroBox/Buttons"]
-custom_minimum_size = Vector2(136, 36)
-layout_mode = 2
-theme_type_variation = &"PrimaryButton"
-text = "启用主题"
-
-[node name="NormalButton" type="Button" parent="Scroll/Margins/Content/Hero/HeroBox/Buttons"]
-custom_minimum_size = Vector2(120, 36)
-layout_mode = 2
-text = "普通按钮"
-
-[node name="DisabledButton" type="Button" parent="Scroll/Margins/Content/Hero/HeroBox/Buttons"]
-custom_minimum_size = Vector2(120, 36)
-layout_mode = 2
-disabled = true
-text = "暂不可用"
-
-[node name="Separator" type="HSeparator" parent="Scroll/Margins/Content/Hero/HeroBox"]
-layout_mode = 2
-
-[node name="Grid" type="GridContainer" parent="Scroll/Margins/Content/Hero/HeroBox"]
-layout_mode = 2
-theme_override_constants/h_separation = 18
-theme_override_constants/v_separation = 10
-columns = 2
-
-[node name="ProjectLabel" type="Label" parent="Scroll/Margins/Content/Hero/HeroBox/Grid"]
-layout_mode = 2
-text = "项目名称"
-
-[node name="ProjectEdit" type="LineEdit" parent="Scroll/Margins/Content/Hero/HeroBox/Grid"]
-custom_minimum_size = Vector2(360, 0)
+[node name="@Control@5" type="Control" parent="Margin/Main/Header" unique_id=528929010]
 layout_mode = 2
 size_flags_horizontal = 3
-placeholder_text = "Blue Archive Editor Theme"
-text = "Blue Archive Editor Theme"
 
-[node name="ImportLabel" type="Label" parent="Scroll/Margins/Content/Hero/HeroBox/Grid"]
+[node name="VersionChip" type="PanelContainer" parent="Margin/Main/Header" unique_id=111235518]
 layout_mode = 2
-text = "资源处理"
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_7icnq")
 
-[node name="ImportOptions" type="OptionButton" parent="Scroll/Margins/Content/Hero/HeroBox/Grid"]
+[node name="@Label@6" type="Label" parent="Margin/Main/Header/VersionChip" unique_id=1911409835]
 layout_mode = 2
-selected = 0
-item_count = 3
-popup/item_0/text = "自动导入"
-popup/item_0/id = 0
-popup/item_1/text = "导入时询问"
-popup/item_1/id = 1
-popup/item_2/text = "手动导入"
-popup/item_2/id = 2
+theme_override_fonts/font = SubResource("SystemFont_7ifg2")
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "2.0.0  /  FORCED LIGHT"
 
-[node name="Tabs" type="TabContainer" parent="Scroll/Margins/Content"]
-custom_minimum_size = Vector2(900, 320)
+[node name="AccentLine" type="Panel" parent="Margin/Main" unique_id=306454171]
+custom_minimum_size = Vector2(0, 4)
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6y8w2")
+
+[node name="Content" type="HBoxContainer" parent="Margin/Main" unique_id=2015503990]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 18
+
+[node name="Sidebar" type="PanelContainer" parent="Margin/Main/Content" unique_id=1300769521]
+custom_minimum_size = Vector2(210, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ug0td")
+
+[node name="SidebarContent" type="VBoxContainer" parent="Margin/Main/Content/Sidebar" unique_id=973806775]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="@Label@7" type="Label" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=1056798768]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_uiasp")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "WORKSPACE"
+
+[node name="@Label@8" type="Label" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=874235039]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_l77w1")
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Theme surfaces"
+
+[node name="@Label@9" type="Label" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=1749277443]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.41960785, 0.49803922, 0.5529412, 1)
+text = "完整浅色覆盖"
+
+[node name="@HSeparator@10" type="HSeparator" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=325791805]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="@HBoxContainer@11" type="HBoxContainer" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=1212251060]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="@Label@12" type="Label" parent="Margin/Main/Content/Sidebar/SidebarContent/@HBoxContainer@11" unique_id=455942909]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_2ma88")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "01"
+
+[node name="@Button@13" type="Button" parent="Margin/Main/Content/Sidebar/SidebarContent/@HBoxContainer@11" unique_id=195910398]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Script"
+alignment = 0
+
+[node name="@HBoxContainer@14" type="HBoxContainer" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=1409628035]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="@Label@15" type="Label" parent="Margin/Main/Content/Sidebar/SidebarContent/@HBoxContainer@14" unique_id=1716160546]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_e8g6w")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "02"
+
+[node name="@Button@16" type="Button" parent="Margin/Main/Content/Sidebar/SidebarContent/@HBoxContainer@14" unique_id=153620345]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Controls"
+alignment = 0
+
+[node name="@HBoxContainer@17" type="HBoxContainer" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=838156077]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="@Label@18" type="Label" parent="Margin/Main/Content/Sidebar/SidebarContent/@HBoxContainer@17" unique_id=1928555447]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_5ssrg")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "03"
+
+[node name="@Button@19" type="Button" parent="Margin/Main/Content/Sidebar/SidebarContent/@HBoxContainer@17" unique_id=545243435]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Resources"
+alignment = 0
+
+[node name="@HBoxContainer@20" type="HBoxContainer" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=1708751480]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="@Label@21" type="Label" parent="Margin/Main/Content/Sidebar/SidebarContent/@HBoxContainer@20" unique_id=165344340]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_y8bf3")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "04"
+
+[node name="@Button@22" type="Button" parent="Margin/Main/Content/Sidebar/SidebarContent/@HBoxContainer@20" unique_id=1868293000]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Theme Info"
+alignment = 0
+
+[node name="@HSeparator@23" type="HSeparator" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=575286135]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="@Label@24" type="Label" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=2127354606]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_13sgi")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "THEME STATUS"
+
+[node name="@Label@25" type="Label" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=1585274895]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_vk4k7")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Light preset locked"
+
+[node name="@Label@26" type="Label" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=1869718132]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.41960785, 0.49803922, 0.5529412, 1)
+text = "Dark preset will be re-applied as light by the plugin."
+
+[node name="@Control@27" type="Control" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=945518374]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="@PanelContainer@28" type="PanelContainer" parent="Margin/Main/Content/Sidebar/SidebarContent" unique_id=1797380847]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7icnq")
+
+[node name="@Label@29" type="Label" parent="Margin/Main/Content/Sidebar/SidebarContent/@PanelContainer@28" unique_id=1104244005]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_5jaag")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "157 EDITOR TYPES"
+
+[node name="PreviewPanel" type="PanelContainer" parent="Margin/Main/Content" unique_id=1310427640]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_fgp8m")
+
+[node name="PreviewContent" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel" unique_id=1212815261]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="@HBoxContainer@30" type="HBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent" unique_id=1045823822]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="@VBoxContainer@31" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/@HBoxContainer@30" unique_id=914492805]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="@Label@32" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/@HBoxContainer@30/@VBoxContainer@31" unique_id=1936220861]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_cddax")
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "LIVE CONTROL PREVIEW"
+
+[node name="@Label@33" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/@HBoxContainer@30/@VBoxContainer@31" unique_id=789263194]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.41960785, 0.49803922, 0.5529412, 1)
+text = "真实编辑器控件的浅色主题预览"
+
+[node name="@Label@34" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/@HBoxContainer@30" unique_id=926082774]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_jsm7x")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "LIGHT / 2.0"
+
+[node name="PreviewTabs" type="TabContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent" unique_id=864741820]
+layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 current_tab = 0
 
-[node name="Script" type="MarginContainer" parent="Scroll/Margins/Content/Tabs"]
-layout_mode = 2
-theme_override_constants/margin_left = 12
-theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 12
-theme_override_constants/margin_bottom = 12
-
-[node name="ScriptBox" type="VBoxContainer" parent="Scroll/Margins/Content/Tabs/Script"]
-layout_mode = 2
-theme_override_constants/separation = 8
-
-[node name="ScriptCaption" type="Label" parent="Scroll/Margins/Content/Tabs/Script/ScriptBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.42, 0.498, 0.553, 1)
-text = "CODE EDITOR / 主题样式"
-
-[node name="Code" type="CodeEdit" parent="Scroll/Margins/Content/Tabs/Script/ScriptBox"]
-layout_mode = 2
-size_flags_vertical = 3
-text = "@tool
-extends EditorPlugin
-
-func _enter_tree() -> void:
-    var theme := preload(\"res://theme.tres\")
-    EditorInterface.get_editor_theme().merge_with(theme)
-    print(\"Theme ready\")
-
-func _exit_tree() -> void:
-    pass
-"
-
-[node name="Controls" type="MarginContainer" parent="Scroll/Margins/Content/Tabs"]
+[node name="Script" type="ScrollContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs" unique_id=1856024670]
 visible = false
 layout_mode = 2
-theme_override_constants/margin_left = 12
-theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 12
-theme_override_constants/margin_bottom = 12
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+metadata/_tab_index = 0
 
-[node name="ControlsBox" type="VBoxContainer" parent="Scroll/Margins/Content/Tabs/Controls"]
+[node name="PageMargin" type="MarginContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Script" unique_id=347763198]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 18
+
+[node name="Content" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Script/PageMargin" unique_id=1629294560]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="@Label@40" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Script/PageMargin/Content" unique_id=657878692]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_oc2fr")
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Script / CodeEdit"
+
+[node name="@Label@41" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Script/PageMargin/Content" unique_id=781221702]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.41960785, 0.49803922, 0.5529412, 1)
+text = "浅色代码背景、深藏蓝文字、青色光标与选中态。"
+
+[node name="CodeSample" type="CodeEdit" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Script/PageMargin/Content" unique_id=1484865676]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "extends Node
+
+# Blue Archive inspired editor theme
+const SKY := Color(\"#4EC3F5\")
+const NAVY := Color(\"#123A64\")
+
+func _ready() -> void:
+    print(\"forced light workspace\")
+    for index in range(3):
+        print(index)
+"
+gutters_draw_line_numbers = true
+
+[node name="@HBoxContainer@48" type="HBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Script/PageMargin/Content" unique_id=1628553200]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="Checks" type="HBoxContainer" parent="Scroll/Margins/Content/Tabs/Controls/ControlsBox"]
+[node name="@Button@49" type="Button" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Script/PageMargin/Content/@HBoxContainer@48" unique_id=1177940501]
 layout_mode = 2
-theme_override_constants/separation = 20
+theme_type_variation = &"PrimaryButton"
+text = "Run Project"
 
-[node name="AutoImport" type="CheckBox" parent="Scroll/Margins/Content/Tabs/Controls/ControlsBox/Checks"]
+[node name="@Button@50" type="Button" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Script/PageMargin/Content/@HBoxContainer@48" unique_id=1084307619]
 layout_mode = 2
-button_pressed = true
-text = "自动导入资源"
+text = "Build"
 
-[node name="Grid" type="CheckBox" parent="Scroll/Margins/Content/Tabs/Controls/ControlsBox/Checks"]
-layout_mode = 2
-text = "显示网格"
-
-[node name="DisabledCheck" type="CheckBox" parent="Scroll/Margins/Content/Tabs/Controls/ControlsBox/Checks"]
+[node name="@Button@51" type="Button" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Script/PageMargin/Content/@HBoxContainer@48" unique_id=1826460852]
 layout_mode = 2
 disabled = true
-button_pressed = true
-text = "高级选项"
+text = "Disabled"
 
-[node name="ProgressLabel" type="Label" parent="Scroll/Margins/Content/Tabs/Controls/ControlsBox"]
+[node name="@Control@52" type="Control" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Script/PageMargin/Content/@HBoxContainer@48" unique_id=666959405]
 layout_mode = 2
-text = "资源导入进度"
+size_flags_horizontal = 3
 
-[node name="Progress" type="ProgressBar" parent="Scroll/Margins/Content/Tabs/Controls/ControlsBox"]
-custom_minimum_size = Vector2(0, 22)
+[node name="@Label@53" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Script/PageMargin/Content/@HBoxContainer@48" unique_id=1716161638]
 layout_mode = 2
-value = 68.0
-show_percentage = true
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.41960785, 0.49803922, 0.5529412, 1)
+text = "Godot 4.7.1"
 
-[node name="Slider" type="HSlider" parent="Scroll/Margins/Content/Tabs/Controls/ControlsBox"]
-layout_mode = 2
-min_value = 50.0
-max_value = 150.0
-value = 100.0
-
-[node name="Radios" type="HBoxContainer" parent="Scroll/Margins/Content/Tabs/Controls/ControlsBox"]
-layout_mode = 2
-theme_override_constants/separation = 20
-
-[node name="RadioA" type="CheckBox" parent="Scroll/Margins/Content/Tabs/Controls/ControlsBox/Radios"]
-theme_type_variation = &"RadioButton"
-button_group = SubResource("ButtonGroup_light")
-layout_mode = 2
-button_pressed = true
-text = "浅色"
-
-[node name="RadioB" type="CheckBox" parent="Scroll/Margins/Content/Tabs/Controls/ControlsBox/Radios"]
-theme_type_variation = &"RadioButton"
-button_group = SubResource("ButtonGroup_light")
-layout_mode = 2
-text = "跟随系统"
-
-[node name="Zoom" type="SpinBox" parent="Scroll/Margins/Content/Tabs/Controls/ControlsBox"]
-layout_mode = 2
-size_flags_horizontal = 0
-min_value = 50.0
-max_value = 200.0
-value = 100.0
-suffix = "%"
-
-[node name="Resources" type="MarginContainer" parent="Scroll/Margins/Content/Tabs"]
+[node name="Controls" type="ScrollContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs" unique_id=2126208865]
 visible = false
 layout_mode = 2
-theme_override_constants/margin_left = 12
-theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 12
-theme_override_constants/margin_bottom = 12
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+metadata/_tab_index = 1
 
-[node name="ResourcesBox" type="VBoxContainer" parent="Scroll/Margins/Content/Tabs/Resources"]
+[node name="PageMargin" type="MarginContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls" unique_id=610585001]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 18
 
-[node name="ResourceCaption" type="Label" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.42, 0.498, 0.553, 1)
-text = "FILESYSTEM / 文件与资源"
-
-[node name="Search" type="LineEdit" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox"]
-layout_mode = 2
-placeholder_text = "搜索资源..."
-
-[node name="FilesVBox" type="VBoxContainer" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox"]
+[node name="Content" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin" unique_id=1878162860]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/separation = 6
+theme_override_constants/separation = 12
 
-[node name="FolderA" type="PanelContainer" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox"]
+[node name="@Label@56" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content" unique_id=84771276]
 layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_u6fhy")
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Controls / Buttons & Inputs"
 
-[node name="FolderARow" type="HBoxContainer" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox/FolderA"]
-layout_mode = 2
-theme_override_constants/separation = 10
-
-[node name="FolderAIcon" type="Label" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox/FolderA/FolderARow"]
-layout_mode = 2
-text = "▸"
-
-[node name="FolderAText" type="Label" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox/FolderA/FolderARow"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "addons"
-
-[node name="FolderABadge" type="Label" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox/FolderA/FolderARow"]
+[node name="@Label@57" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content" unique_id=843787623]
 layout_mode = 2
 theme_override_font_sizes/font_size = 12
-theme_override_colors/font_color = Color(0.42, 0.498, 0.553, 1)
-text = "2"
+theme_override_colors/font_color = Color(0.41960785, 0.49803922, 0.5529412, 1)
+text = "斜切按钮、削角输入框、青色选中和轻量高光。"
 
-[node name="FileA" type="PanelContainer" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox"]
+[node name="@GridContainer@58" type="GridContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content" unique_id=1964431964]
 layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 18
+theme_override_constants/v_separation = 12
+columns = 3
 
-[node name="FileARow" type="HBoxContainer" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox/FileA"]
+[node name="@Label@59" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=879731592]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_514hl")
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Project Name"
+
+[node name="@LineEdit@60" type="LineEdit" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=1204533479]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Blue Archive Theme"
+
+[node name="@OptionButton@71" type="OptionButton" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=766835481]
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "Light (forced)"
+popup/item_0/id = 0
+popup/item_1/text = "Dark (overridden)"
+popup/item_1/id = 1
+popup/item_2/text = "Custom"
+popup/item_2/id = 2
+
+[node name="@Label@72" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=1830235329]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_gmb3d")
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Options"
+
+[node name="@CheckBox@73" type="CheckBox" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=1591868459]
+layout_mode = 2
+button_pressed = true
+text = "Enable plugin"
+
+[node name="@CheckBox@74" type="CheckBox" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=2008188797]
+layout_mode = 2
+button_pressed = true
+text = "Use cyan accents"
+
+[node name="@Label@75" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=974274710]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_mhmrx")
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Radio"
+
+[node name="@CheckBox@76" type="CheckBox" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=1383908358]
+layout_mode = 2
+theme_type_variation = &"RadioButton"
+button_pressed = true
+button_group = SubResource("ButtonGroup_vj1lt")
+text = "Light"
+
+[node name="@CheckBox@77" type="CheckBox" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=255192799]
+layout_mode = 2
+theme_type_variation = &"RadioButton"
+button_group = SubResource("ButtonGroup_vj1lt")
+text = "Dark"
+
+[node name="@Label@78" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=488791627]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_sul4l")
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Progress"
+
+[node name="@ProgressBar@79" type="ProgressBar" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=1923683027]
+custom_minimum_size = Vector2(220, 24)
+layout_mode = 2
+size_flags_horizontal = 3
+value = 72.0
+
+[node name="@SpinBox@82" type="SpinBox" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=1011915551]
+layout_mode = 2
+value = 72.0
+prefix = "FPS "
+
+[node name="@Label@83" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=675789045]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_j882b")
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Sliders"
+
+[node name="@HSlider@84" type="HSlider" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=535493271]
+custom_minimum_size = Vector2(220, 22)
+layout_mode = 2
+size_flags_horizontal = 3
+value = 64.0
+
+[node name="@VSlider@85" type="VSlider" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@GridContainer@58" unique_id=1957662928]
+custom_minimum_size = Vector2(28, 76)
+layout_mode = 2
+value = 42.0
+
+[node name="@HBoxContainer@86" type="HBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content" unique_id=128876844]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="FileAIcon" type="Label" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox/FileA/FileARow"]
+[node name="@Button@87" type="Button" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@HBoxContainer@86" unique_id=1399689688]
 layout_mode = 2
-text = "◆"
+text = "Normal"
 
-[node name="FileAText" type="Label" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox/FileA/FileARow"]
+[node name="@Button@88" type="Button" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@HBoxContainer@86" unique_id=51307558]
 layout_mode = 2
-size_flags_horizontal = 3
-text = "blue_archive_theme.tres"
+theme_type_variation = &"PrimaryButton"
+text = "Primary"
 
-[node name="FileABadge" type="Label" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox/FileA/FileARow"]
+[node name="@Button@89" type="Button" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@HBoxContainer@86" unique_id=1744930726]
 layout_mode = 2
-theme_override_font_sizes/font_size = 12
-theme_override_colors/font_color = Color(0.42, 0.498, 0.553, 1)
-text = "Theme"
+theme_type_variation = &"FlatButton"
+text = "Flat"
 
-[node name="FileB" type="PanelContainer" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox"]
+[node name="@Button@90" type="Button" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content/@HBoxContainer@86" unique_id=1108987063]
 layout_mode = 2
+disabled = true
+text = "Disabled"
 
-[node name="FileBRow" type="HBoxContainer" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox/FileB"]
-layout_mode = 2
-theme_override_constants/separation = 10
-
-[node name="FileBIcon" type="Label" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox/FileB/FileBRow"]
-layout_mode = 2
-text = "◆"
-
-[node name="FileBText" type="Label" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox/FileB/FileBRow"]
+[node name="Resources" type="ScrollContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs" unique_id=1884104005]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
-text = "plugin.gd"
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+metadata/_tab_index = 2
 
-[node name="FileBBadge" type="Label" parent="Scroll/Margins/Content/Tabs/Resources/ResourcesBox/FilesVBox/FileB/FileBRow"]
+[node name="PageMargin" type="MarginContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources" unique_id=1866032450]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 18
+
+[node name="Content" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin" unique_id=1402873847]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="@Label@93" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content" unique_id=909895509]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_qpujt")
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Resources / Tree & ItemList"
+
+[node name="@Label@94" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content" unique_id=1192382382]
 layout_mode = 2
 theme_override_font_sizes/font_size = 12
-theme_override_colors/font_color = Color(0.42, 0.498, 0.553, 1)
-text = "GDScript"
+theme_override_colors/font_color = Color(0.41960785, 0.49803922, 0.5529412, 1)
+text = "文件系统、资源列表与属性检查器的统一浅色表面。"
 
-[node name="Footer" type="HBoxContainer" parent="Scroll/Margins/Content"]
+[node name="@HBoxContainer@95" type="HBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content" unique_id=334006674]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 18
+
+[node name="@PanelContainer@96" type="PanelContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content/@HBoxContainer@95" unique_id=1634126341]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_fgp8m")
+
+[node name="@VBoxContainer@97" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content/@HBoxContainer@95/@PanelContainer@96" unique_id=1896410081]
 layout_mode = 2
 theme_override_constants/separation = 8
 
-[node name="FooterAccent" type="Label" parent="Scroll/Margins/Content/Footer"]
+[node name="@Label@98" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content/@HBoxContainer@95/@PanelContainer@96/@VBoxContainer@97" unique_id=18049523]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.306, 0.765, 0.961, 1)
-text = "SCHALE"
+theme_override_fonts/font = SubResource("SystemFont_un5g5")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "FileSystem"
 
-[node name="FooterText" type="Label" parent="Scroll/Margins/Content/Footer"]
+[node name="@Tree@112" type="Tree" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content/@HBoxContainer@95/@PanelContainer@96/@VBoxContainer@97" unique_id=673797857]
+custom_minimum_size = Vector2(300, 230)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 12
-theme_override_colors/font_color = Color(0.42, 0.498, 0.553, 1)
-text = "原创几何主题 · 不含官方角色、字体或游戏贴图"
+size_flags_vertical = 3
+columns = 2
+column_titles_visible = true
 
-[node name="FooterVersion" type="Label" parent="Scroll/Margins/Content/Footer"]
+[node name="@Timer@111" type="Timer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content/@HBoxContainer@95/@PanelContainer@96/@VBoxContainer@97/@Tree@112" unique_id=1894217462]
+one_shot = true
+
+[node name="@PanelContainer@113" type="PanelContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content/@HBoxContainer@95" unique_id=657995948]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_fgp8m")
+
+[node name="@VBoxContainer@114" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content/@HBoxContainer@95/@PanelContainer@113" unique_id=734509550]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="@Label@115" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content/@HBoxContainer@95/@PanelContainer@113/@VBoxContainer@114" unique_id=1395118343]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_oid0p")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Resource List"
+
+[node name="@ItemList@118" type="ItemList" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content/@HBoxContainer@95/@PanelContainer@113/@VBoxContainer@114" unique_id=859513583]
+custom_minimum_size = Vector2(300, 180)
+layout_mode = 2
+size_flags_horizontal = 3
+item_count = 5
+item_0/text = "blue_archive_theme.tres"
+item_1/text = "theme_preview.tscn"
+item_2/text = "plugin.gd"
+item_3/text = "button_light.svg"
+item_4/text = "tab_selected.svg"
+
+[node name="@ColorPickerButton@119" type="ColorPickerButton" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Resources/PageMargin/Content/@HBoxContainer@95/@PanelContainer@113/@VBoxContainer@114" unique_id=950014021]
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Accent #2FAEE8"
+color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+
+[node name="Theme Info" type="ScrollContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs" unique_id=1764778832]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+metadata/_tab_index = 3
+
+[node name="PageMargin" type="MarginContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info" unique_id=1009000875]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 18
+
+[node name="Content" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin" unique_id=1549865589]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="@Label@122" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content" unique_id=1444859441]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_lw5ym")
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Theme Info / Forced Light"
+
+[node name="@Label@123" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content" unique_id=1462140806]
 layout_mode = 2
 theme_override_font_sizes/font_size = 12
-theme_override_colors/font_color = Color(0.42, 0.498, 0.553, 1)
-text = "Godot 4.7+"
+theme_override_colors/font_color = Color(0.41960785, 0.49803922, 0.5529412, 1)
+text = "启用插件后，即使编辑器预设为深色，也会重新应用完整浅色主题。"
+
+[node name="@GridContainer@124" type="GridContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content" unique_id=1930865432]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 12
+columns = 2
+
+[node name="@PanelContainer@125" type="PanelContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124" unique_id=1381061711]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_7icnq")
+
+[node name="@VBoxContainer@126" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@125" unique_id=514594190]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="@Label@127" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@125/@VBoxContainer@126" unique_id=18610337]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_ss0v8")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "Base"
+
+[node name="@Label@128" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@125/@VBoxContainer@126" unique_id=491389220]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_86va6")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Godot default light theme"
+
+[node name="@PanelContainer@129" type="PanelContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124" unique_id=842194553]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_7icnq")
+
+[node name="@VBoxContainer@130" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@129" unique_id=1976405677]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="@Label@131" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@129/@VBoxContainer@130" unique_id=564112802]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_654an")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "Coverage"
+
+[node name="@Label@132" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@129/@VBoxContainer@130" unique_id=898547768]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_0m4hd")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "157 editor theme types"
+
+[node name="@PanelContainer@133" type="PanelContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124" unique_id=1210064749]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_7icnq")
+
+[node name="@VBoxContainer@134" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@133" unique_id=1638040602]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="@Label@135" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@133/@VBoxContainer@134" unique_id=229829652]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_3508p")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "Assets"
+
+[node name="@Label@136" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@133/@VBoxContainer@134" unique_id=1506963555]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_qv3sr")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Original SVG geometry"
+
+[node name="@PanelContainer@137" type="PanelContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124" unique_id=1390448639]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_7icnq")
+
+[node name="@VBoxContainer@138" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@137" unique_id=1879800588]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="@Label@139" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@137/@VBoxContainer@138" unique_id=1046146509]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_pv8fs")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "Dark preset"
+
+[node name="@Label@140" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@137/@VBoxContainer@138" unique_id=280781456]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_wgg2j")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Re-applied as light"
+
+[node name="@PanelContainer@141" type="PanelContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124" unique_id=378540015]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_7icnq")
+
+[node name="@VBoxContainer@142" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@141" unique_id=1112534178]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="@Label@143" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@141/@VBoxContainer@142" unique_id=1414427380]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_pg82j")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "Icons"
+
+[node name="@Label@144" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@141/@VBoxContainer@142" unique_id=1736656000]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_utbsr")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Inherited from editor"
+
+[node name="@PanelContainer@145" type="PanelContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124" unique_id=1602707363]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_7icnq")
+
+[node name="@VBoxContainer@146" type="VBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@145" unique_id=880811283]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="@Label@147" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@145/@VBoxContainer@146" unique_id=1593708219]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_f4b6y")
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
+text = "Fonts"
+
+[node name="@Label@148" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124/@PanelContainer@145/@VBoxContainer@146" unique_id=417480676]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_y7dh2")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "System UI + mono"
+
+[node name="@HSeparator@149" type="HSeparator" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content" unique_id=1802443237]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="@Label@150" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content" unique_id=999596356]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_hgame")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "Palette"
+
+[node name="@HBoxContainer@151" type="HBoxContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content" unique_id=895389833]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="@Panel@152" type="Panel" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@HBoxContainer@151" unique_id=1231786674]
+custom_minimum_size = Vector2(110, 38)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_lgc50")
+
+[node name="@Label@153" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@HBoxContainer@151/@Panel@152" unique_id=1086899475]
+layout_mode = 0
+theme_override_colors/font_color = Color(0.972549, 0.9882353, 1, 1)
+text = "#123A64"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="@Panel@154" type="Panel" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@HBoxContainer@151" unique_id=1034059477]
+custom_minimum_size = Vector2(110, 38)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_neplb")
+
+[node name="@Label@155" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@HBoxContainer@151/@Panel@154" unique_id=560920761]
+layout_mode = 0
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "#2FAEE8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="@Panel@156" type="Panel" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@HBoxContainer@151" unique_id=784198659]
+custom_minimum_size = Vector2(110, 38)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4kdmy")
+
+[node name="@Label@157" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@HBoxContainer@151/@Panel@156" unique_id=1805093850]
+layout_mode = 0
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "#EAF3FA"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="@Panel@158" type="Panel" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@HBoxContainer@151" unique_id=1424944545]
+custom_minimum_size = Vector2(110, 38)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_dsdw1")
+
+[node name="@Label@159" type="Label" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@HBoxContainer@151/@Panel@158" unique_id=619929495]
+layout_mode = 0
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "#F8FCFF"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Footer" type="HBoxContainer" parent="Margin/Main" unique_id=994147323]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="@Label@160" type="Label" parent="Margin/Main/Footer" unique_id=1540744972]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.41960785, 0.49803922, 0.5529412, 1)
+text = "ORIGINAL GEOMETRY ASSETS  /  NO GAME ARTWORK"
+
+[node name="@Control@161" type="Control" parent="Margin/Main/Footer" unique_id=2074455175]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="@Label@162" type="Label" parent="Margin/Main/Footer" unique_id=1466330700]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
+text = "GODOT 4.7  ·  FORCED LIGHT"

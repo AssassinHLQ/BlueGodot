@@ -6,8 +6,8 @@ config_version=5
 [application]
 
 config/name="Blue Archive Editor Theme"
-config/description="Standalone editor-theme plugin and live control preview."
-config/version="1.0.0"
+config/description="Standalone forced-light Blue Archive inspired editor theme and live control preview."
+config/version="2.0.0"
 run/main_scene="res://addons/blue_archive_editor_theme/preview/theme_preview.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 

@@ -1,13 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="96" height="36" viewBox="0 0 96 36">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-      <stop stop-color="#E9F8FF"/>
-      <stop offset=".55" stop-color="#9FE7FB"/>
-      <stop offset="1" stop-color="#5FC6F2"/>
-    </linearGradient>
-  </defs>
-  <path d="M11 3H85L93 11V25L85 33H11L3 25V11Z" fill="#3A7D9E" opacity=".22"/>
-  <path d="M10 1H85L93 9V23L85 31H10L2 23V9Z" fill="url(#g)" stroke="#3D9CC5" stroke-width="1.5"/>
-  <path d="M11 3H82L91 12V17L64 3H11Z" fill="#FFFFFF" opacity=".45"/>
-  <path d="M11 28H84L92 20V23L85 30H10L3 23V21Z" fill="#2E8EB9" opacity=".18"/>
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#EFFBFF"/>
+    <stop offset="1" stop-color="#C9EBFA"/>
+  </linearGradient>
+  <filter id="s" x="-20%" y="-40%" width="140%" height="190%">
+    <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#123A64" flood-opacity="0.12"/>
+  </filter>
+</defs>
+<path d="M9 2 H83 L94 11 V25 L85 34 H11 L2 25 V11 Z" fill="url(#g)" stroke="#4EC3F5" stroke-width="1.2" filter="url(#s)"/>
+<path d="M10 4 H82 L91 12" fill="none" stroke="#FFFFFF" stroke-opacity="0.82" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M11 30 H84 L91 24" fill="none" stroke="#77DEFF" stroke-opacity="0.28" stroke-width="1"/>
+<path d="M4 12 V24" stroke="#FFFFFF" stroke-opacity="0.38" stroke-width="1"/>
 </svg>

@@ -1,5 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="96" height="36" viewBox="0 0 96 36">
-  <path d="M11 3H85L93 11V25L85 33H11L3 25V11Z" fill="#7C8C98" opacity=".12"/>
-  <path d="M10 1H85L93 9V23L85 31H10L2 23V9Z" fill="#E3E8EC" stroke="#B7C1C9" stroke-width="1.5"/>
-  <path d="M11 3H82L91 12V16L65 3H11Z" fill="#FFFFFF" opacity=".35"/>
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F5F7F9"/>
+    <stop offset="1" stop-color="#E8EDF1"/>
+  </linearGradient>
+  <filter id="s" x="-20%" y="-40%" width="140%" height="190%">
+    <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#123A64" flood-opacity="0.12"/>
+  </filter>
+</defs>
+<path d="M9 2 H83 L94 11 V25 L85 34 H11 L2 25 V11 Z" fill="url(#g)" stroke="#C9D3DB" stroke-width="1.2" filter="url(#s)"/>
+<path d="M10 4 H82 L91 12" fill="none" stroke="#FFFFFF" stroke-opacity="0.82" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M11 30 H84 L91 24" fill="none" stroke="#D5DFE6" stroke-opacity="0.28" stroke-width="1"/>
+<path d="M4 12 V24" stroke="#FFFFFF" stroke-opacity="0.38" stroke-width="1"/>
 </svg>
