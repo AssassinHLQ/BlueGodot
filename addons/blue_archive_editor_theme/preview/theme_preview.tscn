@@ -24,10 +24,10 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.54901963, 0.79607844, 0.9098039, 1)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 
 [sub_resource type="SystemFont" id="SystemFont_7ifg2"]
 font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
@@ -52,10 +52,10 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.72156864, 0.8235294, 0.8901961, 1)
-corner_radius_top_left = 4
-corner_radius_top_right = 4
-corner_radius_bottom_right = 4
-corner_radius_bottom_left = 4
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="SystemFont" id="SystemFont_uiasp"]
 font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
@@ -104,13 +104,10 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.72156864, 0.8235294, 0.8901961, 1)
-corner_radius_top_left = 4
-corner_radius_top_right = 4
-corner_radius_bottom_right = 4
-corner_radius_bottom_left = 4
-shadow_color = Color(0.07, 0.23, 0.39, 0.09)
-shadow_size = 3
-shadow_offset = Vector2(0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="SystemFont" id="SystemFont_cddax"]
 font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans SC", "Segoe UI", "Arial")
@@ -229,10 +226,10 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.72156864, 0.8235294, 0.8901961, 1)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_neplb"]
 content_margin_left = 0.0
@@ -245,10 +242,10 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.72156864, 0.8235294, 0.8901961, 1)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4kdmy"]
 content_margin_left = 0.0
@@ -261,10 +258,10 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.72156864, 0.8235294, 0.8901961, 1)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dsdw1"]
 content_margin_left = 0.0
@@ -277,10 +274,10 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.72156864, 0.8235294, 0.8901961, 1)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 
 [node name="BlueArchiveThemePreview" type="Control" unique_id=396882023]
 layout_mode = 3
@@ -364,7 +361,7 @@ layout_mode = 2
 theme_override_fonts/font = SubResource("SystemFont_7ifg2")
 theme_override_font_sizes/font_size = 12
 theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
-text = "2.0.0  /  FORCED LIGHT"
+text = "3.0.0  /  FORCED LIGHT"
 
 [node name="AccentLine" type="Panel" parent="Margin/Main" unique_id=306454171]
 custom_minimum_size = Vector2(0, 4)
@@ -515,7 +512,7 @@ layout_mode = 2
 theme_override_fonts/font = SubResource("SystemFont_5jaag")
 theme_override_font_sizes/font_size = 11
 theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
-text = "157 EDITOR TYPES"
+text = "161 EDITOR TYPES"
 
 [node name="PreviewPanel" type="PanelContainer" parent="Margin/Main/Content" unique_id=1310427640]
 layout_mode = 2
@@ -554,7 +551,7 @@ layout_mode = 2
 theme_override_fonts/font = SubResource("SystemFont_jsm7x")
 theme_override_font_sizes/font_size = 11
 theme_override_colors/font_color = Color(0.18431373, 0.68235296, 0.9098039, 1)
-text = "LIGHT / 2.0"
+text = "LIGHT / 3.0"
 
 [node name="PreviewTabs" type="TabContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent" unique_id=864741820]
 layout_mode = 2
@@ -672,7 +669,7 @@ text = "Controls / Buttons & Inputs"
 layout_mode = 2
 theme_override_font_sizes/font_size = 12
 theme_override_colors/font_color = Color(0.41960785, 0.49803922, 0.5529412, 1)
-text = "斜切按钮、削角输入框、青色选中和轻量高光。"
+text = "圆角单侧削角按钮、轻圆角输入框、青色选中和下划线。"
 
 [node name="@GridContainer@58" type="GridContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Controls/PageMargin/Content" unique_id=1964431964]
 layout_mode = 2
@@ -983,7 +980,7 @@ layout_mode = 2
 theme_override_fonts/font = SubResource("SystemFont_0m4hd")
 theme_override_font_sizes/font_size = 14
 theme_override_colors/font_color = Color(0.07058824, 0.22745098, 0.39215687, 1)
-text = "157 editor theme types"
+text = "161 editor theme types"
 
 [node name="@PanelContainer@133" type="PanelContainer" parent="Margin/Main/Content/PreviewPanel/PreviewContent/PreviewTabs/Theme Info/PageMargin/Content/@GridContainer@124" unique_id=1210064749]
 layout_mode = 2
